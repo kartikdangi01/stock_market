@@ -9,7 +9,7 @@ const PORT = 3000;
 
 const io = new Server(server, {
   cors: {
-    origin: "https://stock-market-hazel.vercel.app"
+    origin: "*"
   }
 });
 
