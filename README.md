@@ -1,1 +1,1 @@
-A stock market app that is nuilt with the help of React and Node.js
+A stock market app that is built with the help of React and Node.js
