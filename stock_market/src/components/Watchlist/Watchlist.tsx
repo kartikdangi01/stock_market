@@ -21,6 +21,7 @@ export default function Watchlist() {
     const currentWatchlist = watchlist.slice(indexOfFirstStock, indexOfLastStock);
 
     const handlePageChange = (event: React.ChangeEvent<unknown>, page: number) => {
+        console.log(event)
         setCurrentPage(page);
     };
 
