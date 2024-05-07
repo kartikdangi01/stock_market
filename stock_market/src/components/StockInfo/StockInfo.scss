@@ -1,0 +1,221 @@
+#main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 6%;
+}
+
+.info{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.history{
+    flex: 1;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px ;
+    height: 625px;
+    display: flex;
+    flex-direction: column;
+
+    .history-own{
+        flex: 1;
+        overflow-y: scroll;
+        border: 1px solid black;
+        padding: 0 5px;
+        margin: 20px 0;
+    }
+
+    .history-global{
+        flex: 1;
+        overflow-y: scroll;
+        border: 1px solid black;
+        padding: 0 5px;
+    }
+}
+
+.stock-info{
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 125px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid{
+    border: 1px solid #000;
+    margin-left: 15px;
+    height: 500px;
+}
+
+.stock-name{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.stock-price{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-qty{
+    flex: 1.5;
+}
+
+.buy, .sell{
+    flex: 1;
+}
+
+.stock-name, .stock-price, .stock-qty, .buy, .sell{
+    text-align: center;
+}
+
+#buy-btn{
+    color: #2f9e44;
+    border: 1px solid #2f9e44;
+    background-color: #b2f2bb;
+    padding: 20px;
+    cursor: pointer;
+    width: 150px;
+}
+
+#sell-btn{
+    color: #e03131;
+    border: 1px solid #e03131;
+    background-color: #ffc9c9;
+    padding: 20px;
+    cursor: pointer;
+    width: 150px;
+}
+
+#zomato_logo{
+    height: 40px; 
+    width: 50px;
+    margin-right: 10px;
+}
+
+#zomato-tag{
+    font-size: x-large;
+}
+
+.stock-price > p{
+    margin: 0 4px;
+    font-size: x-large;
+}
+
+#upOrDown{
+    font-size: xx-large;
+}
+
+#percentChange{
+    font-size: medium;
+}
+
+#qty-input{
+    width: 72%;
+    padding: 15px;
+    font-size: large;
+}
+
+#history-tag{
+    margin: 5px;
+    margin-bottom: 23px;
+    font-size: x-large;
+}
+
+.history-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 10px;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.history-price-qty-date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-price-qty{
+    font-weight: 600;
+    margin: 0;
+}
+
+.history-date{
+    margin: 0;
+}
+
+.history-buy-txn{
+    text-align: end;
+    color: #2f9e44;
+    flex: 1;
+}
+
+.history-sell-txn{
+    text-align: end;
+    color: #e03131;
+    flex: 1;
+}
+
+.up{
+    color: #2f9e44;
+}
+
+.down{
+    color: #e03131;
+}
+
+.grid{
+    display: flex;
+    align-items: end;
+}
+
+.grid > div{
+    display: flex;
+    align-items: end;
+    width: 100px;
+    border-right: 1px dotted gray;
+    height: 500px;
+}
+
+.grid-ele{
+    width: 20px;
+}
+
+.green-bar{
+    border: 1px solid #2f9e44;
+    background-color: #b2f2bb;
+}
+
+.red-bar{
+    border: 1px solid #e03131;
+    background-color: #ffc9c9;
+}
+
+.stock-symbol{
+    padding: 2%;
+    margin-right: 2%;
+    background-color: rgb(252, 202, 110);
+    border: 1px solid rgb(235, 67, 67);
+    color: rgb(235, 67, 67);
+}
+
+#stock-select{
+    width: 300px;
+    padding: 5% 10%;
+    font-size: larger; 
+}

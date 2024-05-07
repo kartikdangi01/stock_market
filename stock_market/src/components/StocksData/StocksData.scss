@@ -1,0 +1,114 @@
+.stocks-data {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 75%;
+    margin: 3% auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    .stocks-table-head,
+    .stocks-table-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 3%;
+        padding: 0;
+
+        .priceWatchlist {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex: 1;
+        }
+
+        .company-head {
+            flex: 3;
+            text-decoration: none;
+            color: black;
+            margin: 0;
+        }
+
+        .basePrice {
+            flex: 1;
+        }
+    }
+
+    .stocks-table-heading{
+        margin: 0;
+        padding: 0 3%;
+        border-bottom: 1px solid black;
+    }
+
+    .data-stocks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stock-table-heading {
+        border-bottom: 1px solid black;
+        margin: 0;
+        padding: 0 3%;
+    }
+
+    .stocks-table-data-info{
+        border-bottom: 1px solid gray;
+    }
+
+}
+
+.pagination {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    margin: 1% 0;
+    width: 100%;
+}
+
+.pagination .MuiPaginationItem-root {
+    margin: 0 2px;
+}
+
+.error-api{
+    width: 100%;
+    text-align: center;
+    margin: 1% auto;
+}
+
+#watchlist-btn{
+    border: 0;
+    background-color: white;
+
+    .fi-rr-cross {
+        color: red;
+    }
+
+    .fi-rr-add{
+        color: blue;
+    }
+
+    .fi-rr-check{
+        color: green;
+    }
+}
+
+@media screen and (max-width: 414px){
+    *{
+        font-size: small;
+    }
+    .stocks-data {
+        margin: 4%;
+        width: 92%;
+
+        .stocks-table-head,
+        .stocks-table-data{
+            padding: 3% 2%;
+
+            .company-head{
+                flex: 1.5;
+            }
+        }
+    }
+}

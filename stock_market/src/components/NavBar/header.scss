@@ -1,0 +1,143 @@
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+.heading{
+    margin: 0.1% 0.1%;
+    padding: 0.2% 0.75%;
+    background-color: rgb(15, 15, 248);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: large;
+    width: 100%;
+    position: fixed;
+
+    .other-heading{
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+
+        .other-heading-title{
+            padding: 0 0.25%;
+        }
+
+        .my-portfolio-link{
+            text-decoration: none;
+            color: white;
+            flex: 1;
+            text-align: center;
+        }
+    }
+    
+    .kdu-heading{
+        flex: 3.5;
+        padding: 0.5%;
+        margin: 0;
+    }
+
+    i{
+        padding-right: 0.3%;
+    }
+    
+}
+
+.subheading{
+    display: flex;
+    padding-top: 5.5%;
+
+    .subheading-title{
+        padding: 0 0.5%;
+        margin: 0.5% 1.5%;
+        border: 0;
+        background-color: white;
+        font-size: larger;
+    }
+
+    .showBottomBorder{
+        border-bottom: 2px solid blue ;
+    }
+}
+
+.kdu-heading{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 415px) {
+    .other-heading-mobile{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    *{
+        font-size: medium;
+        margin: 0;
+        padding: 0;
+    }
+
+    .heading{
+        padding: 3% 0.3%;
+        margin: 0.6% 0;
+
+        .other-heading{
+            display: none;
+        }
+
+        h1 {
+            font-size: x-large;
+        }
+
+        i{
+            font-size: large
+        }
+    }
+
+    .subheading{
+        padding-top: 20%;
+        font-size: small;
+        padding-bottom: 5%;
+    }
+
+    .other-heading-mobile{
+        padding-right: 5%;
+
+        .mobile-ham{
+            display: inline-block;
+            padding: 1.5px 4px;
+            vertical-align: middle;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+
+    }
+
+    .hamburger-menu{
+        color: black;
+        position: fixed;
+        top: 70px;
+        right: 30px;
+
+        .my-portfolio-link{
+            text-decoration: none;
+            color: black;
+            background-color: aqua;
+            border: 1px solid darkblue;
+            padding: 5%;
+            width: 100px;
+        }
+
+        .other-heading-mobile{
+            background-color: aqua;
+            border: 1px solid darkblue;
+            width: 100px;
+            padding: 5%;
+        }
+    }
+}

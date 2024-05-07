@@ -1,0 +1,188 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+
+    .filter-body {
+        display: flex;
+
+        .filter-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            margin: 8% 4%;
+            background-color: rgb(226, 226, 226);
+            font-size: 20px;
+            position: sticky;
+            top: 18%;
+            height: fit-content;
+            border-top-left-radius: 29px;
+            border-top-right-radius: 29px;
+            border-bottom-left-radius: 29px;
+            border-bottom-right-radius: 29px;
+            width: 75%;
+
+            .filter-section-head {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgb(41, 39, 39);
+                padding: 0 2%;
+
+                .filter-section-head-filter {
+                    padding-left: 2%;
+                }
+
+                .clear-btn {
+                    background-color: rgb(226, 226, 226);
+                    border: 0;
+                    color: blue;
+                    padding: 0;
+                    border-radius: 50%;
+                    font-size: 20px;
+                }
+            }
+
+            .filter-section-search {
+                display: flex;
+                justify-content: center;
+                border-bottom: 1px solid rgb(41, 39, 39);
+                padding: 1.5% 0;
+
+                input {
+                    width: 85%;
+                    background-color: rgb(226, 226, 226);
+                    border: 1px solid rgb(43, 42, 42);
+                    padding: 1%;
+                    margin: 2% 0;
+                    font-size: medium;
+                    border-top-left-radius: 9px;
+                    border-top-right-radius: 9px;
+                    border-bottom-left-radius: 9px;
+                    border-bottom-right-radius: 9px;
+                }
+            }
+
+            .filter-section-date {
+                display: flex;
+                border-bottom: 1px solid rgb(41, 39, 39);
+                justify-content: center;
+
+                .custom-date-picker {
+                    display: flex;
+                    text-align: center;
+                    border: 1px solid rgb(41, 39, 39);
+                    border-radius: 4px;
+                    background-color: rgb(226, 226, 226);
+                    padding: 5% 0;
+                    margin: 8%;
+                    width: 80%;
+                }
+            }
+
+            .filter-section-check {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid rgb(41, 39, 39);
+
+                .filter-section-check-form {
+                    margin: 0;
+                }
+            }
+
+            .filter-section-stocks {
+                display: flex;
+                flex-direction: column;
+                height: 22vh;
+                overflow-y: scroll;
+                padding-bottom: 2%;
+                margin-bottom: 5%;
+                scroll-margin: 2%;
+
+                .filter-section-check-form {
+                    margin: 0;
+                }
+            }
+
+            .filter-section-stocks::-webkit-scrollbar {
+                width: 10px;
+                position: relative;
+                right: 10px; 
+            }
+            
+            .filter-section-stocks::-webkit-scrollbar-track {
+                background: rgb(226, 226, 226);
+            }
+
+            .filter-section-stocks::-webkit-scrollbar-thumb {
+                background: #888;
+                border-radius: 5px;
+            }
+        }
+
+        .filter-data {
+            flex: 2.5;
+            margin-right: 5%;
+            margin-top: 5%;
+
+            .filter-data-collection {
+                margin: 7% 0;
+            }
+
+            .filter-data-date {
+                border-bottom: 1px dotted gray;
+                padding-bottom: 1%;
+            }
+
+            .filter-data-info {
+                display: flex;
+                flex-direction: column;
+                padding-left: 0;
+
+                .filter-data-info-each {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid black;
+
+                    .filter-data-info-name {
+                        flex: 2;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .filter-data-info-other {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .filter-data-info-status {
+                        flex: 0.5;
+                        display: flex;
+                        justify-content: end;
+                        align-items: center;
+
+                        .green-dot {
+                            width: 12px;
+                            height: 12px;
+                            background: #00FF00;
+                            border-radius: 50%;
+                            margin: 0 8%;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+
+                        .red-dot {
+                            width: 12px;
+                            height: 12px;
+                            background: #ee0901;
+                            border-radius: 50%;
+                            margin: 0 8%;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
