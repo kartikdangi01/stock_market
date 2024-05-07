@@ -12,7 +12,6 @@ const io = new Server(server, {
     origin: "https://stock-market-hazel.vercel.app"
   }
 });
-app.use(cors());
 
 app.use(express.json());
 
