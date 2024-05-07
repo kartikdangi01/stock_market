@@ -9,7 +9,7 @@ const PORT = 3000;
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173"
+    origin: "https://stock-market-hazel.vercel.app/"
   }
 });
 app.use(cors());
@@ -17,6 +17,10 @@ app.use(cors());
 app.use(express.json());
 
 let history = {};
+
+app.get('/', (req, res) => {
+  res.send('Hey this is my API running 🥳')
+})
 
 io.on("connection", (socket) => {
 
