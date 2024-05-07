@@ -11,7 +11,7 @@ import History from "./History";
 import Header from "../NavBar/Header";
 import io from 'socket.io-client';
 
-export const socket = io('http://localhost:3000'); 
+export const socket = io('https://stock-market-v2ac.vercel.app/'); 
 
 export default function StockInfo() {
   const { stockname } = useParams();
